@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+body {
+    background-color: #f0f1f5;
+}
+
+header {
+    padding: 24px 0 8px;
+    margin: 0 auto;
+    max-width: 1513px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+header .inner-logo1 {
+    color: #4E9BDA;
+    background-color: #F0F1F5;
+    box-shadow: 8px 8px 16px #C6CFDD, -6px -6px 14px #FFFFFF;
+    font-size: 18px;
+    font-weight: 800;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+
+header .inner-logo2 {
+    color: #4E9BDA;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+header .component .searchbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 16px;
+    gap: 8px;
+    width: 220px;
+    min-width: 220px;
+    height: 40px;
+    background: #F0F1F5;
+    box-shadow: inset 4px 4px 10px #BFCAD9, inset -3px -3px 8px #FFFFFF;
+    border-radius: 14px;
+}
+
+header .component .kinhlup {
+    width: 16px;
+    height: 16px;
+    background-color: #666F7F;
+    -webkit-mask: url("../img/rank/kinhlup.svg") no-repeat center;
+    mask: url("../img/rank/kinhlup.svg") no-repeat center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+header .component .searchbox input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    color: #666F7F;
+}
+
+header .component .searchbox input::placeholder {
+    color: #666F7F;
+}
+
+header .component .searchbox input:focus {
+    outline: none;
+    border: none;
+}
+
+header .component .notification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #F0F1F5;
+    box-shadow: 4px 4px 10px #C6CFDD, -3px -3px 8px #FFFFFF;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+
+header .component .notification .bell {
+    width: 18px;
+    height: 18px;
+    background-color: #666F7F;
+    -webkit-mask: url("../img/rank/bell.svg") no-repeat center;
+    mask: url("../img/rank/bell.svg") no-repeat center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+header .component .notification .new {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -4px;
+    top: -4px;
+    font-size: 10px;
+    font-weight: 800;
+    background: #F6B855;
+    box-shadow: 2px 2px 4px #DEB97C;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+header .component .avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #F0F1F5;
+    box-shadow: 4px 4px 10px #C6CFDD, -3px -3px 8px #FFFFFF;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+
+.main {
+    margin: 0 auto;
+    max-width: 1513px;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 320px 1fr 320px;
+    gap: 20px;
+}
+
+.left-main {
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+
+.inner-profile-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.avatar-big {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 132px;
+    height: 132px;
+    background: #F0F1F5;
+    box-shadow: 8px 8px 16px #C6CFDD, -6px -6px 14px #FFFFFF;
+    border-radius: 20px;
+}
+
+.inner-avatar-big {
+    width: 120px;
+    height: 120px;
+    background: #ffffff01;
+    box-shadow: inset 3px 3px 8px #BFCAD9, inset -2px -2px 6px #FFFFFF;
+    border-radius: 16px;
+}
+
+.rank-info{
+    text-align:center;
+    margin-top:10px;
+}
+
+.rank-info p{
+    font-size:13px;
+    color:#7C8594;
+}
+
+.rank-badge{
+    margin-top:6px;
+    display:inline-block;
+    padding:6px 14px;
+
+    background:#F6B855;
+    color:white;
+    font-weight:600;
+    border-radius:10px;
+
+    box-shadow:4px 4px 8px #DEB97C;
+}
+
+.score{
+    text-align:center;
+    margin-top:10px;
+}
+
+.score p{
+    color:#7C8594;
+    font-size:13px;
+}
+
+.score h2{
+    font-size:28px;
+    color:#3D4B63;
+}
+
+
+
+
+.rank-bars{
+    display:flex;
+    gap:10px;
+}
+
+.bar{
+    width:18px;
+    border-radius:12px;
+    background:#C7CEDD;
+}
+
+.bar1{
+    height:120px;
+    background:linear-gradient(
+        to top,
+        #7C8DB8 70%,
+        #C7CEDD 70%
+    );
+}
+
+.bar2{
+    height:110px;
+    background:linear-gradient(
+        to top,
+        #A5AED3 50%,
+        #C7CEDD 50%
+    );
+}
+
+
+
+.progress-line{
+    margin-top:10px;
+    height:6px;
+    border-radius:10px;
+
+    background:linear-gradient(
+        to right,
+        #6EA1D6,
+        #B7D0F0
+    );
+}
+
+.rank-type{
+    margin-top:10px;
+    font-size:12px;
+    color:#7C8594;
+
+    display:flex;
+    justify-content:center;
+    gap:10px;
+}
+
+.dot{
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    display:inline-block;
+}
+
+.dot1{background:#C7CEDD;}
+.dot2{background:#6EA1D6;}
+.dot3{background:#A5AED3;}
+
+.progress-item{
+    padding:10px 14px;
+    border-radius:12px;
+    margin-top:8px;
+
+    background:#F0F1F5;
+
+    box-shadow:
+    inset 4px 4px 8px #C6CFDD,
+    inset -4px -4px 8px #FFFFFF;
+
+    font-size:13px;
+}
+
+.goal-card{
+    text-align:center;
+}
+
+.goal-image{
+    height:120px;
+    background:url("../img/book.png") center/contain no-repeat;
+}
+
+.goal-text{
+    margin-top:10px;
+
+    padding:10px;
+    border-radius:12px;
+
+    box-shadow:
+    inset 4px 4px 8px #C6CFDD,
+    inset -4px -4px 8px #FFFFFF;
+
+    font-size:13px;
+}
+
+
+
+
+.main .card {
+    border-radius:24px;
+    padding:20px;
+    background: #F0F1F5;
+    box-shadow: 12px 12px 24px #BFCAD9, -8px -8px 20px #FFFFFF;
+}
+
+
+
+.center-main {
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+
+.center-main .rank-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding: 10px 16px;
+    border-radius: 16px;
+    margin-top:8px;
+
+    box-shadow: 4px 4px 10px #C6CFDD, -3px -3px 8px #FFFFFF;
+}
+
+.center-main .rank-item.gold{
+    background:#FCFAB4;
+}
+
+.center-main .rank-item.silver{
+    background:#DEE8FD;
+}
+
+
+
+.right-main{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+
