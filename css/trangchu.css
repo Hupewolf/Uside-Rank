@@ -182,6 +182,7 @@ header .component .avatar {
     align-items: center;
     flex-direction: column;
     padding: 0 20px;
+    gap: 12px;
 }
 
 .avatar-big {
@@ -203,59 +204,75 @@ header .component .avatar {
     border-radius: 16px;
 }
 
-.rank-info{
-    text-align:center;
-    margin-top:10px;
+.rank-info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.rank-info p{
-    font-size:13px;
-    color:#7C8594;
+.rank-info p {
+    font-weight: 500;
+    font-size: 12px;
+    color: #666F7F;
 }
 
-.rank-badge{
-    margin-top:6px;
-    display:inline-block;
-    padding:6px 14px;
+.rank-badge {
+    margin-top: 4px;
+    display: inline-block;
+    padding: 6px 16px;
 
-    background:#F6B855;
     color:white;
-    font-weight:600;
-    border-radius:10px;
-
-    box-shadow:4px 4px 8px #DEB97C;
+    font-weight: 700;
+    font-size: 14px;
+    background: #F6B855;
+    box-shadow: 3px 3px 6px #E2C28D, -2px -2px 4px #FCEBCF;
+    border-radius: 8px;
 }
+
 
 .score{
-    text-align:center;
-    margin-top:10px;
+    text-align: center;
+    margin-top: 4px;
 }
 
-.score p{
-    color:#7C8594;
-    font-size:13px;
+.score p {
+    color: #666F7F;
+    font-size: 14px;
+    font-weight: 500;
 }
 
-.score h2{
-    font-size:28px;
-    color:#3D4B63;
+.score h2 {
+    font-size: 24px;
+    font-weight: 800;
+    color: #424957;
 }
 
-
-
-
-.rank-bars{
-    display:flex;
-    gap:10px;
+.profile-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6px;
 }
 
-.bar{
-    width:18px;
-    border-radius:12px;
-    background:#C7CEDD;
+.rank-bars {
+    display: flex;
+    gap: 16px;
 }
 
-.bar1{
+.bar {
+    width: 33px;
+    height: 205px;
+    border-radius: 12px;
+    background: #D1D7E2;
+    box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.bar1 {
     height:120px;
     background:linear-gradient(
         to top,
@@ -272,6 +289,7 @@ header .component .avatar {
         #C7CEDD 50%
     );
 }
+
 
 
 
@@ -294,6 +312,7 @@ header .component .avatar {
 
     display:flex;
     justify-content:center;
+    flex-direction: column;
     gap:10px;
 }
 
