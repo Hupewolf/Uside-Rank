@@ -11,10 +11,10 @@
 </head>
 <body>
     <header>
-        <div class="logo">
+        <button class="logo" onclick="window.location.href='discover.html'">
             <div class="inner-logo1">U</div>   
             <div class="inner-logo2">Uside</div>   
-        </div>
+        </button>
         <div class="component">
             <div class="searchbox">
                 <div class="kinhlup"></div>
@@ -38,9 +38,7 @@
                     
                         <div class="rank-info">
                             <p>Hạng Hiện Tại</p>
-                            <div class="rank-badge">
-                                Vững Tay 
-                            </div>
+                            <div class="rank-badge">Vững Tay <img src="img/rank/cup.png"></div>
                         </div>
                         <div class="score">
                             <p>Điểm:</p>
@@ -49,44 +47,52 @@
                     </div>
                     <div class="profile-right">
                         <div class="rank-bars">
-                            <div class="bar bar1"></div>
-                            <div class="bar bar2"></div>
+                            <div class="bar-box">
+                                <div class="bar"></div>
+                                <div class="bar1"></div>
+                            </div>
+                            <div class="bar-box">
+                                <div class="bar"></div>
+                                <div class="bar2"></div>
+                            </div>
                         </div>
                         <div class="rank-type">
-                            <span class="dot dot1"></span> Cao nhất
-                            <span class="dot dot2"></span> Cá nhân
-                            <span class="dot dot3"></span> Nhóm
+                            <div class="dot1-box"><span class="dot"></span> Cao nhất</div>
+                            <div class="dot2-box"><span class="dot"></span> Cá nhân</div>
+                            <div class="dot3-box"><span class="dot"></span> Nhóm</div>
                         </div>
                     </div>
                 </div>
 
-                <div class="progress-line"></div>
+                <div class="progress-line"><div class="inner-progress-line"></div></div>
 
             </div>
 
-            <!-- CARD 2 -->
             <div class="card progress-card">
 
                 <div class="progress-item">
+                    <img src="img/rank/bieudo.svg">
                     Còn 380 điểm đến hạng 4
                 </div>
 
                 <div class="progress-item">
+                    <img src="img/rank/fire.svg">
                     Chuỗi Ngày: 12 
                 </div>
 
                 <div class="progress-item">
+                    <img src="img/rank/trungbinh.svg">
                     Trung Bình: 310 điểm
                 </div>
 
             </div>
 
-            <!-- CARD 3 -->
             <div class="card goal-card">
 
                 <div class="goal-image"></div>
 
                 <div class="goal-text">
+                    <img src="img/rank/target.png">
                     Mục Tiêu Kế Tiếp: <b>2 Khóa Học</b>
                 </div>
 
@@ -95,37 +101,186 @@
 
         <div class="center-main">
             <div class="card leaderboard">
-                <div class="leaderboard-header">
-                    <h3>Bảng Xếp Hạng</h3>
+                <img src="img/rank/uside.svg" class="uside">
+                <div class="leaderboard-header">Bảng Xếp Hạng</div>
+                <div class="leaderboard-choose">
+                    <button class="leaderboard-choose-btn active">Toàn Hệ</button>
+                    <button class="leaderboard-choose-btn">Cùng Hạng</button>
+                    <button class="leaderboard-choose-btn">Gần Bạn Nhất</button>
                 </div>
-
                 <div class="leaderboard-list">
                     <div class="rank-item gold">
-                        <span>1</span>
-                        <span>Trọng Nhân</span>
-                        <span>6.800</span>
+                        <div class="left">
+                            <img src="img/rank/no1.svg" class="rank">
+                            <div class="avatar">N</div>
+                            <div class="name">Trọng Nhân</div>
+                        </div>
+                        <div class="right">
+                            <img src="img/rank/fire.svg">
+                            <div class="point">6.800</div>
+                            <div class="level">4</div>
+                            <div class="change-green">
+                                <div class="change1"></div>
+                                <div class="change2">2</div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="rank-item silver">
-                        <span>2</span>
-                        <span>Lâm Khang</span>
-                        <span>6.250</span>
+                        <div class="left">
+                            <img src="img/rank/no2.svg" class="rank">
+                            <div class="avatar">K</div>
+                            <div class="name">Lâm Khang</div>
+                        </div>
+                        <div class="right">
+                            <img src="img/rank/fire.svg">
+                            <div class="point">6.250</div>
+                            <div class="level">4</div>
+                            <div class="change-red">
+                                <div class="change1"></div>
+                                <div class="change2">1</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="rank-item copper">
+                        <div class="left">
+                            <img src="img/rank/no3.svg" class="rank">
+                            <div class="avatar">V</div>
+                            <div class="name">Thảo Vy</div>
+                        </div>
+                        <div class="right">
+                            <img src="img/rank/fire.svg">
+                            <div class="point">3.950</div>
+                            <div class="level">3</div>
+                            <div class="change-green">
+                                <div class="change1"></div>
+                                <div class="change2">1</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rank-item normal">
+                        <div class="left">
+                            <div class="rank1">4</div>
+                            <div class="avatar">P</div>
+                            <div class="name">Tấn Phúc</div>
+                        </div>
+                        <div class="right">
+                            <img src="img/rank/fire.svg">
+                            <div class="point">3.780</div>
+                            <div class="level">2</div>
+                            <div class="change-gray">-</div>
+                        </div>
+                    </div>
+
+                    <div class="rank-item myacc">
+                        <div class="left">
+                            <div class="rank1">5</div>
+                            <div class="avatar">Q</div>
+                            <div class="name">Lam Quỳnh</div>
+                            <div class="you">YOU</div>
+                        </div>
+                        <div class="right">
+                            <img src="img/rank/fire.svg">
+                            <div class="point">4.520</div>
+                            <div class="level">3</div>
+                            <div class="change-gray">-</div>
+                        </div>
+                    </div>
+
+                    <div class="rank-item normal">
+                        <div class="left">
+                            <div class="rank1">6</div>
+                            <div class="avatar">P</div>
+                            <div class="name">Tấn Phúc</div>
+                        </div>
+                        <div class="right">
+                            <img src="img/rank/fire.svg">
+                            <div class="point">3.780</div>
+                            <div class="level">2</div>
+                            <div class="change-gray">-</div>
+                        </div>
+                    </div>
+
+                    <div class="rank-item normal">
+                        <div class="left">
+                            <div class="rank1">7</div>
+                            <div class="avatar">A</div>
+                            <div class="name">Bảo An</div>
+                        </div>
+                        <div class="right">
+                            <img src="img/rank/fire.svg">
+                            <div class="point">3.700</div>
+                            <div class="level">2</div>
+                            <div class="change-green">
+                                <div class="change1"></div>
+                                <div class="change2">2</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rank-item normal">
+                        <div class="left">
+                            <div class="rank1">8</div>
+                            <div class="avatar">T</div>
+                            <div class="name">Duy Tân</div>
+                        </div>
+                        <div class="right">
+                            <img src="img/rank/fire.svg">
+                            <div class="point">3.420</div>
+                            <div class="level">1</div>
+                            <div class="change-red">
+                                <div class="change1"></div>
+                                <div class="change2">1</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rank-item normal">
+                        <div class="left">
+                            <div class="rank1">9</div>
+                            <div class="avatar">H</div>
+                            <div class="name">Mai Hương</div>
+                        </div>
+                        <div class="right">
+                            <img src="img/rank/fire.svg">
+                            <div class="point">2.900</div>
+                            <div class="level">2</div>
+                            <div class="change-green">
+                                <div class="change1"></div>
+                                <div class="change2">1</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="right-main">
-            <div class="right-main">
-                <div class="card mission-card">
-                    nhiệm vụ
+            <div class="main-card">
+                <div class="main-card-header">Nhiệm Vụ Leo Rank</div>
+                <div class="misson-box">
+                    <div class="misson-item"><img src="img/rank/Nhiệm Vụ Dễ.svg"> Nhiệm Vụ Dễ</div>
+                    <div class="misson-item"><img src="img/rank/Nhiệm Vụ Khó.svg"> Nhiệm Vụ Khó</div>
+                    <div class="misson-item"><img src="img/rank/Nhiệm Vụ Nhóm.svg"> Nhiệm Vụ Nhóm</div>
+                    <div class="misson-item"><img src="img/rank/Giải Đấu.svg"> Giải Đấu</div>
+                    <div class="misson-item"><img src="img/rank/Nạp Thẻ.svg"> Nạp Thẻ</div>
+                    <div class="misson-item"><img src="img/rank/BXH Mùa.svg"> BXH Mùa</div>
                 </div>
+            </div>
 
-                <div class="card guide-card">
-                    hướng dẫn
-                </div>
+            <div class="card guide-card">
+                <img src="img/rank/map.svg">
+                Hướng Dẫn
+            </div>
+
+            <div class="card tips-card">
+                <img src="img/rank/bikip.svg">
+                Bí Kíp Học Giỏi
             </div>
         </div>
     </section>
+    <script src="./js/trangchu.js"></script>
 </body>
 </html>
