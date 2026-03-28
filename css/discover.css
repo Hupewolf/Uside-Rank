@@ -159,4 +159,9 @@ header .component .avatar {
 
 .main .below-main {
     background-image: url(../img/discover/Subtract.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1000px;
 }

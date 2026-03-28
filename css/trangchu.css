@@ -542,8 +542,8 @@ header .component .avatar {
 
 .center-main .rank-item .rank {
     position: absolute;
-    top: 0;
-    left: 2px;
+    top: 20%;
+    left: 2%;
     color: #666F7F;
     font-weight: 700;
     font-size: 14px;
@@ -573,11 +573,18 @@ header .component .avatar {
     line-height: 20px;
 }
 
+.center-main .rank-item .right .outer-point {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
 .center-main .rank-item .right .point {
     color: #424957;
     font-weight: 700;
     font-size: 14px;
     line-height: 20px;
+    width: 45px;
 }
 
 .center-main .rank-item .right .level {
@@ -612,6 +619,7 @@ header .component .avatar {
     font-weight: 700;
     font-size: 12px;
     line-height: 16px;
+    width: 8px;
 }
 
 .center-main .rank-item .right .change-red {
@@ -631,15 +639,17 @@ header .component .avatar {
     font-weight: 700;
     font-size: 12px;
     line-height: 16px;
+    width: 8px;
 }
 
 .center-main .rank-item .right .change-gray {
-    width: 17px;
+    width: 20px;
     height: 20px;
     color: #666F7F;
     font-weight: 700;
     font-size: 14px;
     line-height: 20px;
+    text-align: center;
 }
 
 
@@ -808,6 +818,7 @@ header .component .avatar {
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
+    margin-top: 4px;
 }
 
 .right-main .tips-card {
@@ -821,3 +832,18 @@ header .component .avatar {
     line-height: 20px;
 }
 
+.FAB {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    position: fixed;
+    width: 121px;
+    height: 116px;
+    bottom: 5%;
+    right: 2%;
+    background: #F0F1F5;
+    box-shadow: 8px 8px 16px #C6CFDD, -6px -6px 14px #FFFFFF;
+    border-radius: 65px;
+    cursor: pointer;
+}
