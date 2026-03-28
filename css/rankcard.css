@@ -4,3 +4,220 @@
     box-sizing: border-box;
     font-family: "Be Vietnam Pro", sans-serif;
 }
+body{
+    padding: 100px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.container{
+    width: 100%;
+    max-width: 1370px;
+    display: flex;
+    gap: 20px;
+}
+.rankcard{
+    width: 100%;
+    max-width: 443.3333435058594px;
+    padding: 24px;
+    background: rgba(240, 241, 245, 1);
+    box-shadow: -10px -10px 20px 0px rgba(255, 255, 255, 1);
+    box-shadow: 10px 10px 20px 0px rgba(163, 177, 198, 1);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.rankcard-title{
+    width: 100%;
+    display: flex;
+    gap: 12px;
+}
+.rankcard-title-avt{
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 999px;
+    background: rgba(240, 241, 245, 1);
+    box-shadow: -5px -5px 10px 0px rgba(255, 255, 255, 1);
+    box-shadow: 5px 5px 10px 0px rgba(163, 177, 198, 1);
+}
+.rankcard-title-avt{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+}
+.rankcard-title-content{
+    width: 100%;
+    max-width: 282.3333435058594px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.rankcard-title-content h1{
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0%;
+    color: rgba(74, 85, 104, 1);
+}
+.rankcard-title-content p{
+    width: fit-content;
+    padding: 2px 12px;
+    background: rgba(240, 241, 245, 1);
+    box-shadow: -2px -2px 5px 0px rgba(255, 255, 255, 1) inset;
+    box-shadow: 2px 2px 5px 0px rgba(163, 177, 198, 1) inset;
+    border-radius: 999px;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    color: rgba(113, 128, 150, 1);
+}
+.rankcard-title-ico{
+    width: 25px;
+    height: 28px;
+    -webkit-mask-image: url(/img/rankcard/ico-gemi.svg);
+    mask-image: url(/img/rankcard/ico-gemi.svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    background: rgba(66, 78, 92, 1);
+}
+.rankcard-detail{
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.rankcard-detail-content{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.rankcard-detail-content img{
+    width: 14px;
+    height: 14px;
+}
+.rankcard-detail-content p{
+    font-weight:500;
+    font-size: 12px;
+    letter-spacing: 0%;
+    color: rgba(74, 85, 104, 1);
+
+}
+.rankcard-detail-bar{
+    width: 1px;
+    height: 12px;
+    background: rgba(163, 177, 198, 1);
+}
+.rankcard-btn{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    padding: 12px 0;
+    border: 0;
+    border-radius: 999px;
+    text-decoration: none;
+    background: linear-gradient(97.29deg, #74C6E6 0%, #575ECF 100%);
+    box-shadow: -5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+.rankcard-btn p{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+.rankcard-btn-ico{
+    display: none;
+}
+
+
+.rankcard-lock .rankcard-btn,
+.rankcard-full .rankcard-btn{
+    cursor: not-allowed;
+    background: rgba(240, 241, 245, 1);
+    box-shadow: 4px 4px 5px 0px rgba(163, 177, 198, 1) inset;
+}
+.rankcard-lock .rankcard-btn-ico{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    background: rgba(113, 128, 150, 1);
+    -webkit-mask-image: url(/img/rankcard/lock.svg);
+    mask-image: url(/img/rankcard/lock.svg);
+}
+.rankcard-lock .rankcard-btn p,
+.rankcard-full .rankcard-btn p{
+    color: rgba(113, 128, 150, 1);
+}
+
+
+.rankcard-normal{
+    width: 327.6240234375px;
+    padding: 17.95px;
+    gap: 17.95px;
+}
+.rankcard-normal .rankcard-title{
+    gap: 13.46px;
+}
+.rankcard-normal .rankcard-title-avt{
+    width: 53.85599899291992px;
+    height: 53.85599899291992px;
+}
+.rankcard-normal .rankcard-title-avt img{
+    width: 31.415998458862305px;
+    height: 31.415998458862305px;
+}
+.rankcard-normal .rankcard-title-content{
+    gap: 4.49px;
+    max-width: 182.93600463867188px;
+}
+.rankcard-normal .rankcard-title-content h1{
+    font-size: 17.95px;
+}
+.rankcard-normal .rankcard-title-content p{
+    font-size: 13.46px;
+    padding: 2.24px 13.46px;
+}
+.rankcard-normal .rankcard-detail{
+    gap: 13.46px;
+}
+.rankcard-normal .rankcard-detail-content p{
+    font-size: 13.46px;
+}
+.rankcard-normal .rankcard-btn{
+    padding: 11.22px 0;
+}
+.rankcard-normal .rankcard-btn p{
+    font-size: 15.71px;
+    line-height: 22.44px;
+}
