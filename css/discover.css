@@ -1,3 +1,7 @@
+:root {
+    --main-color: #4A5568;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -156,12 +160,238 @@ header .component .avatar {
     position: relative;
 }
 
+.main {
+    margin: 0 auto;
+    max-width: 1513px;
+    width: 95%;
+    position: relative;
+}
+
+.main .uside {
+    transform: scale(1.5);
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    right: 40px;
+}
 
 .main .below-main {
-    background-image: url(../img/discover/Subtract.png);
-    background-position: center;
+    background-image: url(../img/discover/Rectangle\ 17.png);
+    background-position: top center;
     background-size: contain;
     background-repeat: no-repeat;
+    max-width: 1438px;
     width: 100%;
-    height: 1000px;
+    height: 1008px;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
+.main .above-main {
+    background-image: url(../img/discover/Subtract.png);
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 1438px;
+    width: 100%;
+    height: 1008px;
+    position: absolute;
+    bottom: -1020px;
+    left: 18px;
+    z-index: 1;
+    padding: 24px 34px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main .above-main .intro {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.main .above-main .intro .intro1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    color: var(--main-color);
+    text-shadow: 2px 2px 4px rgba(163, 177, 198, 0.6), -1px -1px 3px rgba(255, 255, 255, 0.8);
+}
+
+.main .above-main .intro .intro2 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #718096;
+}
+
+.main .above-main .main-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main .above-main .main-body:nth-child(2) {
+    margin-top: 32px;
+}
+
+.main .above-main .main-body:nth-child(3) {
+    margin-top: 22px;
+}
+
+
+.main .above-main .main-body .main-body-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--main-color);
+    text-shadow: 1px 1px 3px rgba(163, 177, 198, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.7);
+}
+
+.main .above-main .main-body .card-box {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.main-body .filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+} 
+
+.main-body .filters .inner-filters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.main-body .filters .inner-filters .select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 8px;
+    background: #E0E5EC;
+    box-shadow: 5px 5px 10px #A3B1C6, -5px -5px 10px #FFFFFF;
+    border-radius: 9999px;
+    color: var(--main-color);
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.main-body .filters .inner-filters .down {
+    width: 14px;
+    height: 14px;
+    background-color: #718096;
+    -webkit-mask: url("../img/discover/arrowdown.svg") no-repeat center;
+    mask: url("../img/discover/arrowdown.svg") no-repeat center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+.main-body .filters .searchbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 12px;
+    max-width: 570px;
+    min-width: 200px;
+    width: 100%;
+    background: #E0E5EC;
+    box-shadow: inset 5px 5px 10px #A3B1C6, inset -5px -5px 10px #FFFFFF;
+    border-radius: 9999px;
+}
+
+.main-body .filters .searchbox input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    color: #9CA3AF;
+}
+
+.main-body .filters .searchbox input::placeholder {
+    color: #9CA3AF;
+}
+
+.main-body .filters .searchbox input:focus {
+    outline: none;
+    border: none;
+}
+
+.main-body .filters .searchbox .outer-kinhlup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    background: #E0E5EC;
+    box-shadow: 3px 3px 6px #A3B1C6, -3px -3px 6px #FFFFFF;
+    border-radius: 50%;
+}
+
+.main-body .filters .searchbox .outer-kinhlup .kinhlup {
+    width: 14px;
+    height: 14px;
+    background-color: #718096;
+    -webkit-mask: url("../img/rank/kinhlup.svg") no-repeat center;
+    mask: url("../img/rank/kinhlup.svg") no-repeat center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+.pagination {
+    margin: 26px auto 0;
+    display: flex;
+    gap: 8px;
+}
+
+.nav-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #F0F1F5;
+    box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    color: var(--main-color);
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+}
+
+.nav-btn.hidden {
+    display: none;
+}
+
+.page-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #F0F1F5;
+    box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    color: var(--main-color);
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+
+.page-btn.active {
+    border: none;
+    background: linear-gradient(90deg, #6B7280 0%, #F0F1F5 100%);
+    box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
 }
