@@ -15,7 +15,35 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    transition: all 0.25s ease;
+    transform: perspective(1000px) rotateX(0) rotateY(0);
 }
+
+.rankcard:hover {
+    transform: perspective(1000px) rotateX(3deg) rotateY(-3deg) translateY(-6px);
+    box-shadow: 
+        15px 15px 30px #BFCAD9,
+        -10px -10px 25px #FFFFFF;
+}
+
+.rankcard {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.5s ease forwards;
+}
+
+.rankcard:nth-child(1) { animation-delay: 0.1s; }
+.rankcard:nth-child(2) { animation-delay: 0.2s; }
+.rankcard:nth-child(3) { animation-delay: 0.3s; }
+.rankcard:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .rankcard-title{
     width: 100%;
     display: flex;
@@ -37,6 +65,11 @@
     height: 64px;
     object-fit: cover;
     object-position: center;
+    transition: all 0.2s ease;
+}
+
+.rankcard:hover .rankcard-title-avt {
+    transform: scale(1.1);
 }
 .rankcard-title-content{
     width: 100%;
@@ -126,6 +159,23 @@
     letter-spacing: 0%;
     text-align: center;
     color: rgba(255, 255, 255, 1);
+    transition: all 0.15s ease;
+}
+
+.rankcard-btn {
+    background-size: 200%;
+    transition: all 0.3s ease;
+}
+
+.rankcard-btn:hover {
+    background-position: right;
+}
+
+.rankcard-btn:active {
+    transform: scale(0.96);
+    box-shadow: 
+        inset 4px 4px 8px rgba(0,0,0,0.25),
+        inset -4px -4px 8px rgba(255,255,255,0.2);
 }
 .rankcard-btn p{
     font-weight: 600;

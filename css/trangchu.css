@@ -70,6 +70,7 @@ header .component .searchbox {
     background: #F0F1F5;
     box-shadow: inset 4px 4px 10px #BFCAD9, inset -3px -3px 8px #FFFFFF;
     border-radius: 14px;
+    transition: all 0.2s ease;
 }
 
 header .component .kinhlup {
@@ -99,6 +100,13 @@ header .component .searchbox input:focus {
     border: none;
 }
 
+header .component .searchbox:focus-within {
+    box-shadow: 
+        inset 2px 2px 5px #4E9BDA,
+        inset -2px -2px 5px #FFFFFF,
+        0 0 0 2px #4E9BDA33;
+}
+
 header .component .notification {
     display: flex;
     justify-content: center;
@@ -120,6 +128,20 @@ header .component .notification .bell {
     mask: url("../img/rank/bell.svg") no-repeat center;
     -webkit-mask-size: contain;
     mask-size: contain;
+}
+
+header .component .notification:hover .bell {
+    animation: ring 0.5s ease;
+    background-color: #4E9BDA;
+    transform-origin: center top;
+}
+
+@keyframes ring {
+    0% { transform: rotate(0); }
+    25% { transform: rotate(15deg); }
+    50% { transform: rotate(-15deg); }
+    75% { transform: rotate(10deg); }
+    100% { transform: rotate(0); }
 }
 
 header .component .notification .new {
@@ -522,6 +544,11 @@ header .component .avatar {
     border-radius: 16px;
     box-shadow: 4px 4px 10px #C6CFDD, -3px -3px 8px #FFFFFF;
     position: relative;
+    transition: all 0.2s ease;
+}
+
+.center-main .rank-item:hover {
+    transform: scale(1.02);
 }
 
 .center-main .rank-item .left {
@@ -846,4 +873,56 @@ header .component .avatar {
     box-shadow: 8px 8px 16px #C6CFDD, -6px -6px 14px #FFFFFF;
     border-radius: 65px;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
+
+.FAB:hover {
+    box-shadow: 
+        inset 6px 6px 12px #C6CFDD,
+        inset -6px -6px 12px #FFFFFF;
+}
+
+.FAB:active {
+    box-shadow: 
+        inset 8px 8px 16px #C6CFDD,
+        inset -8px -8px 16px #FFFFFF;
+}
+
+button, .notification, .avatar, .leaderboard-choose-btn {
+    transition: all 0.15s ease;
+}
+
+button:active,
+.notification:active,
+.avatar:active,
+.leaderboard-choose-btn:active {
+    box-shadow: inset 4px 4px 8px #BFCAD9,
+                inset -4px -4px 8px #FFFFFF;
+    transform: scale(0.97);
+}
+
+.card, .rank-item, .misson-item {
+    transition: all 0.25s ease;
+}
+
+.card:hover,
+.rank-item:hover,
+.misson-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 16px 16px 30px #BFCAD9,
+                -10px -10px 25px #FFFFFF;
+}
+
+.inner-progress-line {
+    animation: loadProgress 1.5s ease forwards;
+}
+
+@keyframes loadProgress {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 90%;
+    }
+}
+

@@ -74,6 +74,7 @@ header .component .searchbox {
     background: #F0F1F5;
     box-shadow: inset 4px 4px 10px #BFCAD9, inset -3px -3px 8px #FFFFFF;
     border-radius: 14px;
+    transition: all 0.2s ease;
 }
 
 header .component .kinhlup {
@@ -103,6 +104,13 @@ header .component .searchbox input:focus {
     border: none;
 }
 
+header .component .searchbox:focus-within {
+    box-shadow: 
+        inset 2px 2px 5px #4E9BDA,
+        inset -2px -2px 5px #FFFFFF,
+        0 0 0 2px #4E9BDA33;
+}
+
 header .component .notification {
     display: flex;
     justify-content: center;
@@ -124,6 +132,20 @@ header .component .notification .bell {
     mask: url("../img/rank/bell.svg") no-repeat center;
     -webkit-mask-size: contain;
     mask-size: contain;
+}
+
+header .component .notification:hover .bell {
+    animation: ring 0.5s ease;
+    background-color: #4E9BDA;
+    transform-origin: center top;
+}
+
+@keyframes ring {
+    0% { transform: rotate(0); }
+    25% { transform: rotate(15deg); }
+    50% { transform: rotate(-15deg); }
+    75% { transform: rotate(10deg); }
+    100% { transform: rotate(0); }
 }
 
 header .component .notification .new {
@@ -285,6 +307,17 @@ header .component .avatar {
     font-size: 14px;
     line-height: 20px;
     white-space: nowrap;
+    transition: all 0.2s ease;
+}
+
+.main-body .filters .inner-filters .select:hover {
+    transform: translateY(-2px);
+}
+
+.main-body .filters .inner-filters .select:active {
+    box-shadow: 
+        inset 4px 4px 8px #A3B1C6,
+        inset -4px -4px 8px #FFFFFF;
 }
 
 .main-body .filters .inner-filters .down {
@@ -295,6 +328,11 @@ header .component .avatar {
     mask: url("../img/discover/arrowdown.svg") no-repeat center;
     -webkit-mask-size: contain;
     mask-size: contain;
+    transition: transform 0.3s ease;
+}
+
+.select.active .down {
+    transform: rotate(180deg);
 }
 
 .main-body .filters .searchbox {
@@ -326,6 +364,13 @@ header .component .avatar {
 .main-body .filters .searchbox input:focus {
     outline: none;
     border: none;
+}
+
+.main-body .filters .searchbox:focus-within {
+    box-shadow: 
+        inset 3px 3px 8px #A3B1C6,
+        inset -3px -3px 8px #FFFFFF,
+        0 0 0 3px rgba(116,198,230,0.3);
 }
 
 .main-body .filters .searchbox .outer-kinhlup {
@@ -394,4 +439,12 @@ header .component .avatar {
     background: linear-gradient(90deg, #6B7280 0%, #F0F1F5 100%);
     box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.25);
     color: #ffffff;
+}
+
+.page-btn, .nav-btn {
+    transition: all 0.15s ease;
+}
+
+.page-btn:active, .nav-btn:active {
+    transform: scale(0.9);
 }
