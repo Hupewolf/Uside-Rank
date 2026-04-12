@@ -179,7 +179,7 @@ header .component .avatar {
 }
 
 .main {
-    margin: 0 auto;
+    margin: 8px auto 0;
     max-width: 1513px;
     width: 95%;
     display: grid;
@@ -511,13 +511,13 @@ header .component .avatar {
     align-items: center;
     width: 151px;
     height: 36px;
-    background: #F0F1F5;
+    background: #ffffff;
     box-shadow: 4px 4px 10px #C6CFDD, -3px -3px 8px #FFFFFF;
     border-radius: 12px;
     border: none;
-    color: #666F7F;
-    font-weight: 500;
-    font-size: 14px;
+    color: #4E9BDA;
+    font-weight: 800;
+    font-size: 16px;
     line-height: 20px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
