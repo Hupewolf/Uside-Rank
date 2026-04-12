@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaushan+Script&family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mountains+of+Christmas:wght@400;700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/duty.css">
+    <title>Nhiệm Vụ</title>
+</head>
+<body>
+    <header>
+        <button class="logo" onclick="window.location.href='index.html'">
+            <div class="inner-logo1">U</div>   
+            <div class="inner-logo2">Uside</div>   
+        </button>
+        <div class="component">
+            <div class="searchbox">
+                <div class="kinhlup"></div>
+                <input type="text" placeholder="Tìm kiếm...">
+            </div>
+            <div class="notification">
+                <div class="bell"></div>
+                <div class="new">3</div>
+            </div>
+            <div class="avatar"></div>
+        </div>
+    </header>
+    <section class="main">
+        <div class="left-main card">
+            <div class="profile-card">
+                <div class="inner-profile-card">
+                    <div class="profile-left">
+                        <div class="avatar-big">
+                            <div class="inner-avatar-big"></div>
+                        </div>
+                    
+                        <div class="rank-info">
+                            <p>Hạng Hiện Tại</p>
+                            <div class="rank-badge">Vững Tay <img src="img/rank/cup.png"></div>
+                        </div>
+                        <div class="score">
+                            <p>Điểm:</p>
+                            <h2>4,520</h2>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="progress-card">
+
+                <div class="progress-item">
+                    <img src="img/rank/bieudo.svg">
+                    Còn 380 điểm đến hạng 4
+                </div>
+
+                <div class="progress-item">
+                    <img src="img/rank/fire.svg">
+                    Chuỗi Ngày: 12 
+                </div>
+
+                <div class="progress-item">
+                    <img src="img/rank/trungbinh.svg">
+                    Trung Bình: 310 điểm
+                </div>
+
+            </div>
+            <div class="profile-right">
+                <div class="rank-bars">
+                    <div class="bar-box">
+                        <div class="bar"></div>
+                        <div class="bar1"></div>
+                    </div>
+                    <div class="bar-box">
+                        <div class="bar"></div>
+                        <div class="bar2"></div>
+                    </div>
+                </div>
+                <div class="rank-type">
+                    <div class="dot2-box"><span class="dot"></span> Cá nhân</div>
+                    <div class="dot1-box"><span class="dot"></span> Cao nhất</div>
+                    <div class="dot3-box"><span class="dot"></span> Nhóm</div>
+                </div>
+            </div>
+        </div>
+        <div class="right-main">
+            
+            <div class="task-header">
+                <div>
+                    <h1>Trung Tâm Nhiệm Vụ</h1>
+                    <p>Hoàn thành nhiệm vụ, tích điểm, leo hạng nào!</p>
+                    <p><i>Cố lên — bạn sắp đạt hạng Vàng rồi!</i></p>
+                </div>
+                <button class="back-btn">←</button>
+            </div>
+
+            <!-- Progress -->
+            <div class="progress-wrapper">
+                <div class="progress-line"><div class="inner-progress-line"></div></div>
+                <div class="xp">
+                    3.000 / 5.000 XP
+                </div>
+            </div>
+
+            <div class="task-filters">
+                <div class="filter-choose">
+                    <div class="primary">Loại nhiệm vụ</div>
+                    <div class="secondary">
+                        <button class="filter active">Tất cả</button>
+                        <button class="filter">Kỹ thuật</button>
+                        <button class="filter">Truyền thông</button>
+                        <button class="filter">Sự kiện</button>
+                    </div>
+                </div>
+                <div class="filter-choose">
+                    <div class="primary">Phân cấp nhiệm vụ</div>
+                    <div class="select">
+                        Tất cả
+                        <div class="down"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="./js/duty.js"></script>
+</body>
+</html>
