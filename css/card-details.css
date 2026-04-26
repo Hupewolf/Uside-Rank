@@ -20,6 +20,86 @@ body {
     flex-direction: column;
     gap: 28px;
 }
+.description{
+    width: 100%;
+    max-width: 943.5999755859375px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #E6EEF4;
+    box-shadow: 8px 8px 18px 0px #8CA1B759;
+    box-shadow: -8px -8px 18px 0px #FFFFFFF2;
+    border-radius: 28px;
+}
+.description-container{
+    width: 100%;
+    padding: 24px;
+    background: #EBF3F9;
+    box-shadow: -5px -5px 10px 0px #FFFFFFF2 inset;
+    box-shadow: 5px 5px 10px 0px #8CA1B759 inset;
+    border-radius: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.description-top{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22.75px;
+    letter-spacing: 0%;
+    color: #324457D9;
+}
+.description-cen{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+.description-cen-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.description-cen-box-title{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2.16px;
+    text-transform: uppercase;
+    color: #1666AA;
+}
+.description-cen-box-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.description-cen-box-content p{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    color: #657383;
+}
+.description-bottom{
+    width: 100%;
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-top: 0.8px solid #CFD9E166;
+}
+.description-bottom-text{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    color: #657383;
+}
+
+
+
 .mission{
     width: 100%;
     max-width: 943.5999755859375px;
@@ -58,6 +138,10 @@ body {
     -webkit-mask-position: center;
     mask-position: center;
     background-color: #1666aa;
+}
+.title-avt-ico-doc{
+    -webkit-mask-image: url(../img/cardDetails/doc.svg);
+    mask-image: url(../img/cardDetails/doc.svg);
 }
 .title-avt-ico-mission{
     -webkit-mask-image: url(../img/cardDetails/title-tick-ico.svg);
@@ -897,3 +981,6 @@ background: #FDD5B7;
     letter-spacing: 0%;
     color: #657383;
 }
+
+
+
