@@ -1,18 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Be Vietnam Pro", sans-serif;
-}
-body {
-    padding: 50px 0;
-    background-color: #f0f1f5;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 50px;
-}
+
 .container1{
     width: 100%;
     max-width: 943.5999755859375px;
