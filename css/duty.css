@@ -187,7 +187,7 @@ header .component .avatar {
     max-width: 1513px;
     width: 95%;
     display: grid;
-    grid-template-columns: 208px 1fr;
+    grid-template-columns: 1fr;
     gap: 20px;
     padding: 0 0 47px 0;
 }
