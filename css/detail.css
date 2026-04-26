@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+body {
+    background-color: #f0f1f5;
+}
+
+header {
+    padding: 24px 0 8px;
+    margin: 0 auto;
+    max-width: 1513px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    border: none;
+}
+
+header .inner-logo1 {
+    color: #4E9BDA;
+    background-color: #F0F1F5;
+    box-shadow: 8px 8px 16px #C6CFDD, -6px -6px 14px #FFFFFF;
+    font-size: 18px;
+    font-weight: 800;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+
+header .inner-logo2 {
+    color: #4E9BDA;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+header .component .searchbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 16px;
+    gap: 8px;
+    width: 220px;
+    min-width: 220px;
+    height: 40px;
+    background: #F0F1F5;
+    box-shadow: inset 4px 4px 10px #BFCAD9, inset -3px -3px 8px #FFFFFF;
+    border-radius: 14px;
+    transition: all 0.2s ease;
+}
+
+header .component .kinhlup {
+    width: 16px;
+    height: 16px;
+    background-color: #666F7F;
+    -webkit-mask: url("../img/rank/kinhlup.svg") no-repeat center;
+    mask: url("../img/rank/kinhlup.svg") no-repeat center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+header .component .searchbox input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    color: #666F7F;
+}
+
+header .component .searchbox input::placeholder {
+    color: #666F7F;
+}
+
+header .component .searchbox input:focus {
+    outline: none;
+    border: none;
+}
+
+header .component .searchbox:focus-within {
+    box-shadow: 
+        inset 2px 2px 5px #4E9BDA,
+        inset -2px -2px 5px #FFFFFF,
+        0 0 0 2px #4E9BDA33;
+}
+
+header .component .notification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #F0F1F5;
+    box-shadow: 4px 4px 10px #C6CFDD, -3px -3px 8px #FFFFFF;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+
+header .component .notification .bell {
+    width: 18px;
+    height: 18px;
+    background-color: #666F7F;
+    -webkit-mask: url("../img/rank/bell.svg") no-repeat center;
+    mask: url("../img/rank/bell.svg") no-repeat center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+header .component .notification:hover .bell {
+    animation: ring 0.5s ease;
+    background-color: #4E9BDA;
+    transform-origin: center top;
+}
+
+@keyframes ring {
+    0% { transform: rotate(0); }
+    25% { transform: rotate(15deg); }
+    50% { transform: rotate(-15deg); }
+    75% { transform: rotate(10deg); }
+    100% { transform: rotate(0); }
+}
+
+header .component .notification .new {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -4px;
+    top: -4px;
+    font-size: 10px;
+    font-weight: 800;
+    background: #F6B855;
+    box-shadow: 2px 2px 4px #DEB97C;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+header .component .avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #F0F1F5;
+    box-shadow: 4px 4px 10px #C6CFDD, -3px -3px 8px #FFFFFF;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+
+.uside {
+    width: 150px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
